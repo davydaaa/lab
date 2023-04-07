@@ -6,7 +6,7 @@
 
   <groupId>ua.lviv.iot</groupId>
   <artifactId>work</artifactId>
-  <version>-DinteractiveMode=false</version>
+  <version>4.0.0</version>
 
   <name>work</name>
   <!-- FIXME change it to the project's website -->
