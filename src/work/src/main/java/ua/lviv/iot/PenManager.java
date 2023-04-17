@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab2;
+package work.src.main.java.ua.lviv.iot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,5 +14,8 @@ public class PenManager {
         for (Pen pen : pens) {
             System.out.println(pen.toString() + " Price: " + pen.calculatePrice());
         }
+
+        PenWriter penWriter = new PenWriter("pens.csv");
+        penWriter.writeToFile(pens);
     }
 }

@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab2;
+package work.src.main.java.ua.lviv.iot;
 
 import lombok.*;
 
@@ -9,7 +9,7 @@ import lombok.*;
 @ToString
 
 public abstract class Pen {
-    public static final String HEADERS = "brand,color,matherial,size";
+    public static final String HEADERS = "brand,color,material,size";
     protected String brand;
     protected String color;
     protected String material;
@@ -20,6 +20,6 @@ public abstract class Pen {
         return HEADERS;
     }
     public String toCSV() {
-        return getBrand() + ", " + getColor() + ", " + getMatherial() + ", " + getSize();
+        return getBrand() + ", " + getColor() + ", " + getMaterial() + ", " + getSize();
     }
 }
