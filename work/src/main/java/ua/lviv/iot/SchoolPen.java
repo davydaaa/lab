@@ -6,6 +6,7 @@ import lombok.*;
 @Setter
 @ToString(callSuper = true)
 public class SchoolPen extends Pen {
+    public static final String HEADERS = "numPencils,NumPens,numErasers";
     private static final int PEN_PRICE = 5;
     private static final int PENCIL_PRICE = 2;
     private static final int ERASER_PRICE = 1;
@@ -49,6 +50,14 @@ public class SchoolPen extends Pen {
             return;
         }
         numPens--;
+    }
+
+    public String getHeaders() {
+        return super.getHeaders() + "," + HEADERS;
+    }
+
+    public String toCSV() {
+        return super.toCSV() + ", " + getNumPencils() + ", " + getNumPens() + ", " + getNumErasers();
     }
 }
 
